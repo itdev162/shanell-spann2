@@ -1,0 +1,14 @@
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\Persistence.deps.json
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\Persistence.dll
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\ref\Persistence.dll
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\Persistence.pdb
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\Domain.dll
+C:\code\matc\itdev162\shanell-spann2\Persistence\bin\Debug\net5.0\Domain.pdb
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.csproj.AssemblyReference.cache
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfoInputs.cache
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfo.cs
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.csproj.CoreCompileInputs.cache
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.dll
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\ref\Persistence.dll
+C:\code\matc\itdev162\shanell-spann2\Persistence\obj\Debug\net5.0\Persistence.pdb
