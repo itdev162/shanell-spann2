@@ -1,5 +1,5 @@
-import axios from 'axios';
 import React from 'react';
+import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PostList from './components/PostList/PostList';
 import Post from './components/Post/Post';
@@ -7,7 +7,7 @@ import './App.css';
 
 class App extends React.Component {
   state = {
-    posts: [], 
+    posts: [],
     post: null
   }
 
@@ -20,7 +20,7 @@ class App extends React.Component {
     })
       .catch((error) => {
         console.error(`Error fetching data: ${error}`);
-      })
+    })
   }
 
   viewPost = (post) => {
@@ -30,6 +30,19 @@ class App extends React.Component {
     });
   }
 
+  deletePost = post => {
+    axios
+      .delete(`http://localhost:5000/api/posts/${post.id}`)
+      .then(response => {
+        const newPosts = this.state.posts.filter(p => p.id !== post.id);
+        this.setState({
+          posts: [...newPosts]
+        });
+      })
+      .catch(error => {
+        console.error(`Error deleting post: ${error}`);
+      })
+  }
   render() {
     const { posts, post } = this.state;
 
@@ -41,8 +54,12 @@ class App extends React.Component {
           </header>
           <main className="App-content">
             <Switch>
-              <Route path="/">
-                <PostList posts={posts} clickPost={this.viewPost} />
+              <Route exact path="/">
+                <PostList 
+                  posts={posts} 
+                  clickPost={this.viewPost}
+                  deletePost={this.deletePost} 
+                />
               </Route>
               <Route path="/posts/:postId">
                 <Post post={post} />
